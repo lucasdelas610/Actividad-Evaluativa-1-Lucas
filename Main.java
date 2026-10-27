@@ -110,3 +110,18 @@ class Servidor {
         return 0; // esto es cuando los datos son inválidos
     }
 }
+
+
+
+/*
+ PREGUNTAS CONCEPTUALES
+
+ 1. ¿Por qué dos objetos de la misma clase pueden almacenar valores diferentes en sus atributos?
+ Porque cada new crea un objeto con sus propios atributos. La clase es solo el molde, por eso s1 puede ser VPN y s2 CORREO sin mezclarse.
+ 2. ¿Qué diferencia existe entre Servidor b = a; y Servidor b = new Servidor();?
+ - Servidor b = a; no crea nada nuevo, b y a son el mismo objeto. Si cambio b, cambia a.
+ - Servidor b = new Servidor(); crea un objeto nuevo y separado de a.
+ 3. ¿Por qué es importante comprobar datosValidos() antes de calcular el porcentaje?
+Porque si los totales son 0 dividiríamos entre cero, y con datos incorrectos el porcentaje no tendría sentido. Por eso pongo N/D.
+ */
+
